@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [SwagLabs Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Chrome - Sanity Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest">
+        <methods>
+          <include name="LoginWithValidUser"/>
+        </methods>
+      </class> <!-- TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest -->
+      <class name="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest">
+        <methods>
+          <include name="addItemToCart"/>
+        </methods>
+      </class> <!-- TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest -->
+    </classes>
+  </test> <!-- Chrome - Sanity Tests(failed) -->
+  <test thread-count="2" parallel="tests" name="Firefox - Regression Tests(failed)">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest">
+        <methods>
+          <include name="completeCheckoutFlow"/>
+        </methods>
+      </class> <!-- TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest -->
+      <class name="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest">
+        <methods>
+          <include name="LoginWithInvalidUser"/>
+        </methods>
+      </class> <!-- TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest -->
+    </classes>
+  </test> <!-- Firefox - Regression Tests(failed) -->
+</suite> <!-- Failed suite [SwagLabs Test Suite] -->

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-04T18:37:11 EET" name="Suite" finished-at="2025-06-04T18:37:22 EET" duration-ms="11264">
+    <groups>
+      <group name="regression">
+        <method signature="CheckoutTest.completeCheckoutFlow()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest@557caf28]" name="completeCheckoutFlow" class="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest"/>
+        <method signature="LoginTest.LoginWithInvalidUser()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" name="LoginWithInvalidUser" class="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest"/>
+        <method signature="LoginTest.LoginWithInvalidUser()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest@408d971b]" name="LoginWithInvalidUser" class="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="CartTest.addItemToCart()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" name="addItemToCart" class="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest"/>
+        <method signature="LoginTest.LoginWithValidUser()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" name="LoginWithValidUser" class="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest"/>
+        <method signature="LoginTest.LoginWithValidUser()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest@408d971b]" name="LoginWithValidUser" class="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2025-06-04T18:37:11 EET" name="Test" finished-at="2025-06-04T18:37:22 EET" duration-ms="11264">
+      <class name="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest@557caf28]" started-at="2025-06-04T18:37:17 EET" name="setup" finished-at="2025-06-04T18:37:18 EET" duration-ms="1692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="completeCheckoutFlow()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest@557caf28]" started-at="2025-06-04T18:37:18 EET" name="completeCheckoutFlow" finished-at="2025-06-04T18:37:19 EET" duration-ms="204" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}
+  (Session info: chrome=137.0.7151.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed91aefc2696cda1f93097d13bab08d2, findElement {value=finish, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\asaqa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53135/devtoo..., se:cdpVersion: 137.0.7151.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed91aefc2696cda1f93097d13bab08d2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}
+  (Session info: chrome=137.0.7151.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed91aefc2696cda1f93097d13bab08d2, findElement {value=finish, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\asaqa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53135/devtoo..., se:cdpVersion: 137.0.7151.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed91aefc2696cda1f93097d13bab08d2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest.completeCheckoutFlow(CheckoutTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeCheckoutFlow -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest@557caf28]" started-at="2025-06-04T18:37:19 EET" name="teardown" finished-at="2025-06-04T18:37:19 EET" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CheckoutTest -->
+      <class name="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest@408d971b]" started-at="2025-06-04T18:37:19 EET" name="setup" finished-at="2025-06-04T18:37:20 EET" duration-ms="1377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginWithInvalidUser()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest@408d971b]" started-at="2025-06-04T18:37:20 EET" name="LoginWithInvalidUser" finished-at="2025-06-04T18:37:20 EET" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest@408d971b]" started-at="2025-06-04T18:37:20 EET" name="teardown" finished-at="2025-06-04T18:37:20 EET" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest@408d971b]" started-at="2025-06-04T18:37:20 EET" name="setup" finished-at="2025-06-04T18:37:22 EET" duration-ms="1512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginWithValidUser()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest@408d971b]" started-at="2025-06-04T18:37:22 EET" name="LoginWithValidUser" finished-at="2025-06-04T18:37:22 EET" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest@408d971b]" started-at="2025-06-04T18:37:22 EET" name="teardown" finished-at="2025-06-04T18:37:22 EET" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest -->
+      <class name="TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" started-at="2025-06-04T18:37:11 EET" name="setup" finished-at="2025-06-04T18:37:13 EET" duration-ms="1876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addItemToCart()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" started-at="2025-06-04T18:37:13 EET" name="addItemToCart" finished-at="2025-06-04T18:37:13 EET" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" started-at="2025-06-04T18:37:13 EET" name="teardown" finished-at="2025-06-04T18:37:13 EET" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" started-at="2025-06-04T18:37:13 EET" name="setup" finished-at="2025-06-04T18:37:15 EET" duration-ms="1620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginWithInvalidUser()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" started-at="2025-06-04T18:37:15 EET" name="LoginWithInvalidUser" finished-at="2025-06-04T18:37:15 EET" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest.LoginWithInvalidUser(LoginTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" started-at="2025-06-04T18:37:15 EET" name="teardown" finished-at="2025-06-04T18:37:15 EET" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" started-at="2025-06-04T18:37:15 EET" name="setup" finished-at="2025-06-04T18:37:17 EET" duration-ms="1627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginWithValidUser()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" started-at="2025-06-04T18:37:17 EET" name="LoginWithValidUser" finished-at="2025-06-04T18:37:17 EET" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.LoginTest.LoginWithValidUser(LoginTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest@7cc0cdad]" started-at="2025-06-04T18:37:17 EET" name="teardown" finished-at="2025-06-04T18:37:17 EET" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestNGPRacticewithSwagLab.TestNGPRacticewithSwagLab.CartTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
